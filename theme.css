@@ -80,16 +80,19 @@ width:1px;
 }
 
 .navigation {
-border:1px solid;
-border-radius:1px;
-font-size:12px;
+border-bottom:1px solid #000;
 font-weight:400;
 text-align:left;
+padding:0;
+
 }
 
 .navigation a {
-text-decoration:none;
-color:#000;
+    text-decoration:none;
+    color:#000;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    padding:5px 10px;
 }
 
 #account-container {
@@ -188,12 +191,7 @@ line-height:14px;
 #game-navigation .current-date {
 border:1px solid;
 padding:11px 0;
-}
-
-#game-navigation a {
-line-height:1.5em;
-display: block;
-cursor: pointer;
+font-weight: 700 !important;
 }
 
 #resource-bar {
@@ -504,18 +502,24 @@ background:url(./images/province_profile/default_flag.png) no-repeat;
 }
 
 .game-header {
-height:30px;
+height:auto;
 border-top:1px solid #6b6348;
 border-bottom:1px solid #6b6348;
 }
 
+
 .game-header h1 {
-height:22px;
-font-size:12px;
-color:#000;
-margin:0 1px;
-padding:6px 4px 1px;
-font-weight: 550;
+    height:auto;
+    font-size:12px;
+    color:#000;
+    margin:5px 10px;
+    padding:5px; 
+    border:1px solid #ccc;
+    background-color:#a0ce4e;
+}
+
+.game-header a h1 {
+    background-color:#fff !important;
 }
 
 .game-content {
@@ -747,14 +751,6 @@ width:40px;
 font-size:16px!important;
 }
 
-.game-header h1:before {
-content:"| "!important;
-}
-
-.game-header h1:after {
-content:" |"!important;
-}
-
 .bad {
 color:#CC8080;
 }
@@ -771,10 +767,6 @@ width:1px;
 
 #game-navigation .navigation {
 margin-bottom:5px;
-}
-
-.navigation a:hover,.game-header a h1:hover {
-color:#CCC;
 }
 
 a.info-link,lobby-panel th,.lobby-panel table th,.lobby-panel table td,#game-navigation div,form .errorlist,div.uploader span.filename,div.uploader span.action,.provinces-legend .invitations,.game-content table.applicant-view input[type="submit"],.game-content table.mail-view input[type="submit"],.game-content table.mail-view .button-link,#col_0,#col_1,#col_2,#col_3,#col_4,#col_5,#col_6 {
