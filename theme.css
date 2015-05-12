@@ -1,34 +1,74 @@
 @import url("uniform.utopia.css");
-
-/*
-FOLLOW THIS FORMAT:
-
-.my-first-selector,
-.my-second-selector {
-    - positioning and size
-    - border styling
-    - internal styling - padding etc.
-    - typography
-    - colors
-    - display, opacity and special effects
-}
-*/
-
+/* cyrillic-ext */
 @font-face {
-    font-family: 'KnightsQuestRegular';
-    src: url('./fonts/knights-webfont.eot');
-    src: url('./fonts/knights-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/knights-webfont.woff') format('woff'),
-         url('./fonts/knights-webfont.ttf') format('truetype'),
-         url('./fonts/knights-webfont.svg#KnightsQuestRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/ttwNtsRpgsxVmgGGmiUOEoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEEYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 body {
     color: white;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-family: 'Open Sans';
     background-color: black;
+    font-weight: 400 !important;
 }
 
 
@@ -42,37 +82,13 @@ body {
 .navigation {
 
     /* border styling */
-    border: 2px solid;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-
+    border-bottom:2px solid #fff;
     /* internal styling - padding etc. */
 
     /* typography */
-    font-family: KnightsQuestRegular;
-    font-size: 20px;
-    font-weight: normal;
-    text-align: left;
+    font-family: 'Open Sans';
 
-    -moz-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    -webkit-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
-    text-shadow: -1px 1px 2px #000, 1px -1px 1px #ffcf68;
-    filter: glow(color=#252525,strength=3);
-
-    /* colors */
-    border-color: #555555;
-    -moz-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    -webkit-box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-    box-shadow: 1px -1px 2px 0px #fffbf1, inset 0px 0px 6px #000;
-
-    background: #494432; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #7b7354 0%, #29261c 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7b7354), color-stop(100%,#29261c)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* IE10+ */
-    background: radial-gradient(center, ellipse cover,  #7b7354 0%,#29261c 100%); /* W3C */
+    
 }
 
 .navigation a {
@@ -102,7 +118,7 @@ body {
 }
 
 #account-container {
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 20px;
 }
 
@@ -137,7 +153,7 @@ body {
 {
     font-size: 18px;
     font-weight: bolder;
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     border-bottom: 1px solid #29261c;
     -moz-box-shadow: 0px 2px 1px -1px #7b7354;
     -webkit-box-shadow: 0px 2px 1px -1px #7b7354;
@@ -211,7 +227,7 @@ a:hover {
 h1,
 h2,
 h3 {
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-weight: 200;
     color: #fff;
     -moz-text-shadow: -1px 1px 2px #000;
@@ -322,7 +338,7 @@ h3 {
 }
 
 .lobby-panel table th {
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 20px;
 }
 
@@ -383,7 +399,7 @@ h3 {
 
     /* internal styling - padding etc. */
     /* typography */
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 20px;
 }
 
@@ -484,7 +500,7 @@ h3 {
 
     padding: 11px 0px;
 
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 16px;
     text-shadow: -1px 1px 2px black, 1px -1px 1px #FFCF68;
 
@@ -529,7 +545,7 @@ h3 {
     /* internal styling - padding etc. */
 
     /* typography */
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 14px;
 
     -moz-text-shadow: -1px 1px 2px #000, 1px -1px 2px #ffcf68;
@@ -697,7 +713,7 @@ form ul.errorlist {
 
 .game-content form.change-kingdom {
     /* typography */
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 16px;
 }
 
@@ -735,7 +751,7 @@ form input[type=password] {
     border-width: 1px;
     border-color: #d7d7d7;
     padding-left: 3px;
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 20px;
     text-align: left;
 
@@ -778,7 +794,7 @@ form input[type=submit],
 
     /* internal styling - padding etc. */
     /* typography */
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 20px;
     font-weight: normal;
     -moz-text-shadow: -1px 1px 2px #3d2f1a, 1px -1px 2px #3d2f1a;
@@ -832,7 +848,7 @@ div.uploader span.action
 {
     padding-left: 5px;
     /* typography */
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 20px;
     font-weight: normal;
     text-align: left;
@@ -865,7 +881,7 @@ div.uploader span.action
 .game-content form table thead th {
     height: 36px;
 
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-weight: normal;
     font-size: 20px;
     text-align: center;
@@ -875,7 +891,7 @@ div.uploader span.action
 
 .game-content form tbody th {
     border-left: 2px ridge rgba(48, 48, 48, 0.4);
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 20px;
 
 }
@@ -994,7 +1010,7 @@ td.news-province-modification {
 }
 
 .provinces-legend .invitations {
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 18px;
 }
 
@@ -1086,7 +1102,7 @@ td.news-province-modification {
 
     font-size: 24px;
     text-decoration: none;
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     -moz-text-shadow: 1px -1px 1px #908661;
     -webkit-text-shadow: 1px -1px 1px #908661;
     text-shadow: 1px -1px 1px #908661;
@@ -1200,7 +1216,7 @@ td.news-province-modification {
 
 
 .game-content thead th {
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-weight: normal;
     font-size: 18px;
 
@@ -1219,7 +1235,7 @@ td.news-province-modification {
 
 .game-content tbody th {
     border-left: 6px ridge rgba(48, 48, 48, 0.4);
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-size: 18px;
 
 }
@@ -1417,7 +1433,7 @@ body.wysiwyg {
 }
 
 .campaigns .campaign-message-intro {
-    font-family: KnightsQuestRegular;
+    font-family: 'Open Sans';
     font-weight: 200;
     color: white;
     text-shadow: -1px 1px 2px black;
