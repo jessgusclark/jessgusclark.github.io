@@ -176,6 +176,19 @@ body {
   float: left;
 }
 
+.news-incident-date {
+  text-align: left;
+  font-weight: 700 !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.news-incident-report {
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 /*
  * Dropdowns:
  */

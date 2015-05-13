@@ -80,6 +80,9 @@ body { font-family: $primary-font !important; background-color: #fff; font-weigh
   .recent-news .recent-news-date {font-weight:700 !important; display: block; width:25%; float: left;}
   .recent-news .recent-news-content {display: block; width:70%; float: left;}
 
+  .news-incident-date {text-align: left; font-weight:700 !important; padding-top:8px; padding-bottom: 8px;}
+  .news-incident-report {text-align: left; padding-top:8px; padding-bottom: 8px;}
+
 /*
  * Dropdowns:
  */
