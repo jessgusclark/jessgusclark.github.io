@@ -15,7 +15,7 @@ $grey-light : #D5D5D5;
 $success-color : #b4e59c;
 $fail-color : #EF4343;
 
-$primary-font : 'Open Sans';
+$primary-font : 'Open Sans', sans-serif;
 $secondary-font : 'Droid Serif';
 
 
@@ -23,7 +23,7 @@ $secondary-font : 'Droid Serif';
 @import url("uniform.utopia.css");
 
 
-body { font-family: $primary-font; background-color: #fff; font-weight: 400 !important;; font-size:1.5em !important;}
+body { font-family: $primary-font !important; background-color: #fff; font-weight: 400 !important;; font-size:1.5em !important;}
 #header-logo { width: 1px; }
 
 /* 
@@ -70,14 +70,14 @@ body { font-family: $primary-font; background-color: #fff; font-weight: 400 !imp
   */
 
   /*.game-content form, */
-  .game-content h2 { margin: 0 !important; padding: 18px 0; line-height: 1.1em; font-size: 2em; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark; }
+  .game-content h2 { margin: 0 !important; padding: 18px 0; line-height: 1.1em; font-size: 2em; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark; border-top:1px solid $grey-light;}
 
-  .game-content h2 {border-top:1px solid $grey-light;}
+  .game-content #throne-game-message p, .game-content #throne-monarch-message p {border-left:5px solid $grey-light; margin:10px 25px 25px 25px !important; padding-left:10px; font-style:italic;}
 
-  .game-content #throne-game-message p, .game-content #throne-monarch-message p {border-left:5px solid $grey-light; margin:10px 25px !important; padding-left:10px; font-style:italic;}
-
-
-
+  // news:
+  .recent-news  {width:100%; float: left; padding:8px 0 !important; border-bottom: 1px solid $grey-light}
+  .recent-news .recent-news-date {font-weight:700 !important; display: block; width:25%; float: left;}
+  .recent-news .recent-news-content {display: block; width:70%; float: left;}
 
 /*
  * Dropdowns:
@@ -125,6 +125,14 @@ form input[type=submit], .button-link { border: 1px solid $primary; color:#000; 
 .good.message {background: $success-color;  }
 .bad.message {background: $fail-color; color:#fff; }
 .info.message {  background: $primary-light; color:#000;}
+
+
+/* 
+ * Misc 
+ */
+
+#left-column>div:first-child {display: none;}
+#right-column {display: none;}
 
 /* 
  * TBD
