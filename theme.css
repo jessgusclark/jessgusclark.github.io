@@ -14,6 +14,10 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
   background-image: none !important;
 }
 
+.selector span {
+  color: #000;
+}
+
 /* 
  * SIDE NAVIGATION
  */
