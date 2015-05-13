@@ -26,11 +26,6 @@ $secondary-font : 'Droid Serif';
 body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
 #header-logo { width: 1px; }
 
-
-div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {background-image:none !important;}
-
-
-.selector span {color:#000;}
 /* 
  * SIDE NAVIGATION
  */
@@ -83,6 +78,38 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
 
 
 
+
+/*
+ * Forms, buttons
+ */
+
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {background-image:none !important;}
+
+.selector span {color:#000;}
+
+input[type=text], form textarea, form input[type=text], form input[type=password] { padding-left: 3px; font-size: 1em; text-align: left; color: #000; border-color: #d7d7d7; border-width: 1px; }
+form input[type=text], form input[type=password] { height: 18px; font-size: 1em; }
+
+form input[type=submit], .button-link { border: 1px solid $primary; color:#000; font-weight: 300 !important; text-transform: uppercase; padding:5px 20px !important; font-family: $primary-font !important;}
+
+#change-kingdom-button { display: inline-block; padding:0; margin:0 ;width:auto !important; height:auto !important; background-color:#fff;}
+#change-kingdom-button:hover, .button-link:hover {background-color:$primary-light; color:#fff;}
+/*.game-content form.change-kingdom #royal-commands .button-link { font-size: 14px; line-height: 18px; }*/
+
+
+
+
+/*
+ * Kingdom Page:
+ */
+
+.game-content form.change-kingdom { font-size: 14px; }
+.game-content form.change-kingdom .change-kingdom-heading { font-size: 14px; line-height: 24px; }
+.game-content form.change-kingdom .change-kingdom-form { font-size: 30px; color: #a9a9a9; }
+.game-content form.change-kingdom.change-kingdom-target { border: 0; border-top: 1px solid; border-color: #555; }
+
+
+
 /* 
  * TBD
  */
@@ -111,13 +138,7 @@ a:focus, a:hover { color: #AAA; }
 .game-content h3 { font-size: 24px; color: #000; margin-left: 15px; margin-top: 5px; margin-bottom: 5px; text-align: left; }
 .game-content form.no-visible-fields { width: auto; background: none; border: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 form ul.errorlist { color: #e26f80; }
-.game-content form.change-kingdom { font-size: 14px; }
-.game-content form.change-kingdom .change-kingdom-heading { font-size: 14px; line-height: 24px; }
-.game-content form.change-kingdom .change-kingdom-form { font-size: 30px; color: #a9a9a9; }
-.game-content form.change-kingdom.change-kingdom-target { border: 0; border-top: 1px solid; border-color: #555; }
-input[type=text], form textarea, form input[type=text], form input[type=password] { padding-left: 3px; font-size: 1em; text-align: left; color: #000; border-color: #d7d7d7; border-width: 1px; }
-form input[type=text], form input[type=password] { height: 18px; font-size: 1em; }
-form input[type=submit], .button-link { border: 1px solid; border-radius: 4px; font-size: 18px; font-weight: 400; border-color: #7c551a; }
+
 div.selector span, div.uploader span.filename, div.uploader span.action { padding-left: 5px; font-size: 12px!important; font-weight: 400; text-align: left; }
 .game-content form table { border: 0; border-top: 1px solid; margin-bottom: 10px; text-align: left; border-color: #555; }
 .game-content form table thead th { height: 36px; font-weight: 400; font-size: 14px; text-align: center; text-decoration: none; vertical-align: bottom; }
@@ -127,7 +148,7 @@ div.selector span, div.uploader span.filename, div.uploader span.action { paddin
 .game-content form.change-kingdom #royal-commands { border-top: 1px dotted #000; }
 .game-content form.change-kingdom #royal-commands table { border-top: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 .game-content form.change-kingdom #royal-commands table tbody td, .game-content form.change-kingdom #royal-commands input[type=text] { font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 13px; font-weight: 400; }
-.game-content form.change-kingdom #royal-commands .button-link { font-size: 14px; line-height: 18px; }
+
 .news-legend span.news-aid:before { content: "+: "; }
 .news-legend span.news-intra-kingdom-conflict:before { content: "$: "; }
 .news-legend span.news-actions-against-our-kingdom:before { content: "%: "; }
@@ -149,7 +170,7 @@ td.news-obituaries:before { content: "O"; }
 .monarch, .at-war, .intel-rotten { color: #F28585; }
 .chamberlain, .intel-stale { color: #FFC583; }
 .you { font-weight: 700; }
-.slot-number { font-size: .8em; color: #B0B0B0; }
+.slot-number { color: #B0B0B0; }
 .dip-status-NORMAL { background-color: #01DF01; }
 .dip-status-UNFRIENDLY { background-color: #FFBF00; }
 .dip-status-HOSTILE { background-color: #FF4000; background-image: url(./images/hostile_meter/hostile_gradient.png); background-repeat: repeat-y; }
@@ -204,7 +225,7 @@ td#inline-hostility-meter { text-align: left; text-shadow: none; font-weight: 40
 .game-content form.change-kingdom .change-kingdom-nav { display: inline-block; margin: 5px 0 4px 4px; }
 .game-content form.change-kingdom .change-kingdom-nav a { display: inline-block; width: auto!important; font-size: .9em; text-align: center; padding: 3px; }
 .game-content p { margin: 5px!important; }
-#change-kingdom-button { display: inline-block; height: 30px; width: 40px; font-size: 16px!important; }
+
 .bad { color: #CC8080; }
 .subtotal good { color: #green; }
 .reportable img { visibility: hidden; height: 1px; width: 1px; }

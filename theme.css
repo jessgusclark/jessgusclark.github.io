@@ -10,14 +10,6 @@ body {
   width: 1px;
 }
 
-div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
-  background-image: none !important;
-}
-
-.selector span {
-  color: #000;
-}
-
 /* 
  * SIDE NAVIGATION
  */
@@ -166,6 +158,78 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
   font-style: italic;
 }
 
+/*
+ * Forms, buttons
+ */
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
+  background-image: none !important;
+}
+
+.selector span {
+  color: #000;
+}
+
+input[type=text], form textarea, form input[type=text], form input[type=password] {
+  padding-left: 3px;
+  font-size: 1em;
+  text-align: left;
+  color: #000;
+  border-color: #d7d7d7;
+  border-width: 1px;
+}
+
+form input[type=text], form input[type=password] {
+  height: 18px;
+  font-size: 1em;
+}
+
+form input[type=submit], .button-link {
+  border: 1px solid #4c8ec5;
+  color: #000;
+  font-weight: 300 !important;
+  text-transform: uppercase;
+  padding: 5px 20px !important;
+  font-family: "Open Sans" !important;
+}
+
+#change-kingdom-button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: auto !important;
+  height: auto !important;
+  background-color: #fff;
+}
+
+#change-kingdom-button:hover, .button-link:hover {
+  background-color: #9cc4e5;
+  color: #fff;
+}
+
+/*.game-content form.change-kingdom #royal-commands .button-link { font-size: 14px; line-height: 18px; }*/
+/*
+ * Kingdom Page:
+ */
+.game-content form.change-kingdom {
+  font-size: 14px;
+}
+
+.game-content form.change-kingdom .change-kingdom-heading {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.game-content form.change-kingdom .change-kingdom-form {
+  font-size: 30px;
+  color: #a9a9a9;
+}
+
+.game-content form.change-kingdom.change-kingdom-target {
+  border: 0;
+  border-top: 1px solid;
+  border-color: #555;
+}
+
 /* 
  * TBD
  */
@@ -280,48 +344,6 @@ form ul.errorlist {
   color: #e26f80;
 }
 
-.game-content form.change-kingdom {
-  font-size: 14px;
-}
-
-.game-content form.change-kingdom .change-kingdom-heading {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.game-content form.change-kingdom .change-kingdom-form {
-  font-size: 30px;
-  color: #a9a9a9;
-}
-
-.game-content form.change-kingdom.change-kingdom-target {
-  border: 0;
-  border-top: 1px solid;
-  border-color: #555;
-}
-
-input[type=text], form textarea, form input[type=text], form input[type=password] {
-  padding-left: 3px;
-  font-size: 1em;
-  text-align: left;
-  color: #000;
-  border-color: #d7d7d7;
-  border-width: 1px;
-}
-
-form input[type=text], form input[type=password] {
-  height: 18px;
-  font-size: 1em;
-}
-
-form input[type=submit], .button-link {
-  border: 1px solid;
-  border-radius: 4px;
-  font-size: 18px;
-  font-weight: 400;
-  border-color: #7c551a;
-}
-
 div.selector span, div.uploader span.filename, div.uploader span.action {
   padding-left: 5px;
   font-size: 12px !important;
@@ -376,11 +398,6 @@ div.selector span, div.uploader span.filename, div.uploader span.action {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
-}
-
-.game-content form.change-kingdom #royal-commands .button-link {
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .news-legend span.news-aid:before {
@@ -468,7 +485,6 @@ td.news-obituaries:before {
 }
 
 .slot-number {
-  font-size: .8em;
   color: #B0B0B0;
 }
 
@@ -714,13 +730,6 @@ td#inline-hostility-meter {
 
 .game-content p {
   margin: 5px !important;
-}
-
-#change-kingdom-button {
-  display: inline-block;
-  height: 30px;
-  width: 40px;
-  font-size: 16px !important;
 }
 
 .bad {
