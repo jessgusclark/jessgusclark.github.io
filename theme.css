@@ -3,7 +3,8 @@
 body {
   font-family: "Open Sans";
   background-color: #fff;
-  font-weight: 400;
+  font-weight: 400 !important;
+  font-size: 1.5em !important;
 }
 
 #header-logo {
@@ -92,7 +93,7 @@ body {
 }
 
 #resource-bar .negative {
-  color: #ef6161;
+  color: #EF4343;
 }
 
 #resource-bar tbody th, .game-content form {
@@ -159,16 +160,22 @@ body {
 }
 
 /*
- * Forms, buttons
+ * Dropdowns:
  */
-div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {
-  background-image: none !important;
-}
-
 .selector span {
   color: #000;
 }
 
+div.selector span, div.uploader span.filename, div.uploader span.action {
+  padding-left: 5px;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+}
+
+/*
+ * Buttons
+ */
 input[type=text], form textarea, form input[type=text], form input[type=password] {
   padding-left: 3px;
   font-size: 1em;
@@ -192,7 +199,7 @@ form input[type=submit], .button-link {
   font-family: "Open Sans" !important;
 }
 
-#change-kingdom-button {
+#change-kingdom-button, #btnTrain {
   display: inline-block;
   padding: 0;
   margin: 0;
@@ -201,9 +208,9 @@ form input[type=submit], .button-link {
   background-color: #fff;
 }
 
-#change-kingdom-button:hover, .button-link:hover {
-  background-color: #9cc4e5;
-  color: #fff;
+#change-kingdom-button:hover, .button-link:hover, form input[type=submit]:hover {
+  background-color: #9cc4e5 !important;
+  color: #fff !important;
 }
 
 /*.game-content form.change-kingdom #royal-commands .button-link { font-size: 14px; line-height: 18px; }*/
@@ -228,6 +235,30 @@ form input[type=submit], .button-link {
   border: 0;
   border-top: 1px solid;
   border-color: #555;
+}
+
+/* 
+ * Messages and Alerts
+ */
+.message {
+  font-size: 1em;
+  line-height: 1em;
+  color: #fff;
+  padding: 12px;
+}
+
+.good.message {
+  background: #b4e59c;
+}
+
+.bad.message {
+  background: #EF4343;
+  color: #fff;
+}
+
+.info.message {
+  background: #9cc4e5;
+  color: #000;
 }
 
 /* 
@@ -292,32 +323,6 @@ a:focus, a:hover {
   font-size: 22px;
 }
 
-.message {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  border: 1px solid;
-  border-radius: 8px;
-}
-
-.good.message {
-  color: #f8f8f8;
-  background: #718d16;
-  border-color: #feffea;
-}
-
-.bad.message {
-  color: #f8f8f8;
-  background: #521802;
-  border-color: #feffea;
-}
-
-.info.message {
-  color: #f8f8f8;
-  background: #D09734;
-  border-color: #feffea;
-}
-
 .lobby-panel .statement h2 {
   line-height: 14px;
 }
@@ -342,13 +347,6 @@ a:focus, a:hover {
 
 form ul.errorlist {
   color: #e26f80;
-}
-
-div.selector span, div.uploader span.filename, div.uploader span.action {
-  padding-left: 5px;
-  font-size: 12px !important;
-  font-weight: 400;
-  text-align: left;
 }
 
 .game-content form table {

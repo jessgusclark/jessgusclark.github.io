@@ -13,7 +13,7 @@ $grey : #777;
 $grey-light : #D5D5D5;
 
 $success-color : #b4e59c;
-$fail-color : #ef6161;
+$fail-color : #EF4343;
 
 $primary-font : 'Open Sans';
 $secondary-font : 'Droid Serif';
@@ -23,7 +23,7 @@ $secondary-font : 'Droid Serif';
 @import url("uniform.utopia.css");
 
 
-body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
+body { font-family: $primary-font; background-color: #fff; font-weight: 400 !important;; font-size:1.5em !important;}
 #header-logo { width: 1px; }
 
 /* 
@@ -80,20 +80,26 @@ body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
 
 
 /*
- * Forms, buttons
+ * Dropdowns:
  */
 
-div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {background-image:none !important;}
-
 .selector span {color:#000;}
+
+div.selector span, div.uploader span.filename, div.uploader span.action { padding-left: 5px; font-size: 1em; font-weight: 400; text-align: left; }
+
+
+
+/*
+ * Buttons
+ */
 
 input[type=text], form textarea, form input[type=text], form input[type=password] { padding-left: 3px; font-size: 1em; text-align: left; color: #000; border-color: #d7d7d7; border-width: 1px; }
 form input[type=text], form input[type=password] { height: 18px; font-size: 1em; }
 
 form input[type=submit], .button-link { border: 1px solid $primary; color:#000; font-weight: 300 !important; text-transform: uppercase; padding:5px 20px !important; font-family: $primary-font !important;}
 
-#change-kingdom-button { display: inline-block; padding:0; margin:0 ;width:auto !important; height:auto !important; background-color:#fff;}
-#change-kingdom-button:hover, .button-link:hover {background-color:$primary-light; color:#fff;}
+#change-kingdom-button, #btnTrain { display: inline-block; padding:0; margin:0 ;width:auto !important; height:auto !important; background-color:#fff;}
+#change-kingdom-button:hover, .button-link:hover, form input[type=submit]:hover {background-color:$primary-light !important; color:#fff !important;}
 /*.game-content form.change-kingdom #royal-commands .button-link { font-size: 14px; line-height: 18px; }*/
 
 
@@ -109,6 +115,16 @@ form input[type=submit], .button-link { border: 1px solid $primary; color:#000; 
 .game-content form.change-kingdom.change-kingdom-target { border: 0; border-top: 1px solid; border-color: #555; }
 
 
+
+
+/* 
+ * Messages and Alerts
+ */
+
+.message { font-size: 1em; line-height: 1em; color: #fff;  padding:12px;}
+.good.message {background: $success-color;  }
+.bad.message {background: $fail-color; color:#fff; }
+.info.message {  background: $primary-light; color:#000;}
 
 /* 
  * TBD
@@ -127,10 +143,7 @@ a:focus, a:hover { color: #AAA; }
 .race-changes h2, .trait-changes h2 { font-size: 30px; }
 .campaigns .basic-details .campaign-summary h2 { font-size: 1em; }
 .campaigns .basic-details .campaign-summary .highlight-keyword { font-size: 22px; }
-.message { font-weight: 700; font-size: 14px; line-height: 14px; border: 1px solid; border-radius: 8px; }
-.good.message { color: #f8f8f8; background: #718d16; border-color: #feffea; }
-.bad.message { color: #f8f8f8; background: #521802; border-color: #feffea; }
-.info.message { color: #f8f8f8; background: #D09734; border-color: #feffea; }
+
 .lobby-panel .statement h2 { line-height: 14px; }
 
 
@@ -139,7 +152,8 @@ a:focus, a:hover { color: #AAA; }
 .game-content form.no-visible-fields { width: auto; background: none; border: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 form ul.errorlist { color: #e26f80; }
 
-div.selector span, div.uploader span.filename, div.uploader span.action { padding-left: 5px; font-size: 12px!important; font-weight: 400; text-align: left; }
+
+
 .game-content form table { border: 0; border-top: 1px solid; margin-bottom: 10px; text-align: left; border-color: #555; }
 .game-content form table thead th { height: 36px; font-weight: 400; font-size: 14px; text-align: center; text-decoration: none; vertical-align: bottom; }
 .game-content form tbody th { border-left: 1px solid #ccc; ; font-size: 14px; }
