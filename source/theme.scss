@@ -23,10 +23,31 @@ $secondary-font : 'Droid Serif';
 
 @import url("uniform.utopia.css");
 
+/* 
+ * STRUCTURE
+ */
 
-body { font-family: $primary-font !important; background-color: #fff; font-weight: 400 !important;; font-size:1.5em !important;}
+body { font-family: $primary-font !important; background-color: #fff; font-weight: 400 !important;; font-size:1.5em !important; box-sizing: border-box !important;}
 #header-logo { width: 1px; }
 
+
+#outer-container {width:100%;}
+#inner-container {width:100%; max-width: 1000px;}
+
+#header {width:100%; height:auto; max-height:50px; display: block;}
+#middle, #left-column {width:100%; clear:both;}
+
+
+#game-navigation {width:15%;}
+#resource-bar, .game-header, .game-content {width:80%;}
+
+
+//600px and less:
+@media only screen and (max-width: 600px){
+
+  #game-navigation, #resource-bar, .game-header, .game-content {width:100%; clear:both;}
+
+}
 /* 
  * SIDE NAVIGATION
  */
