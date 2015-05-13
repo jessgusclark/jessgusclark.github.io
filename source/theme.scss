@@ -74,8 +74,9 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
   * Headings: Game update, Royal Commands, The Province of, News;
   */
 
-  /*.game-content form, */.game-content h2 { margin: 18px 0 ; line-height: 1em; font-size: 2em; padding: 10px 0; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark;}
-
+  /*.game-content form, */
+  .game-content h2 { margin: 18px 0 ; line-height: 1em; font-size: 2em; padding: 10px 0; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark; }
+  .game-content h2:not(:first-child) {border-top:1px solid $grey-light;}
 
   #throne-monarch-message p {border-left:5px solid $primary-light; margin-left:10px; padding-left:10px;}
 
@@ -87,7 +88,6 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
 #account-header .account-image { visibility: hidden; }
 a { text-decoration: none; }
 a:focus, a:hover { color: #AAA; }
-h1, h2, h3 { font-weight: 100; }
 #footer { color: #4d5355; font-size: 10px; }
 .age-changes, .lobby-panel, .campaigns { border: 1px solid; border-color: #555; }
 .lobby-panel h1 { font-size: 14px; line-height: 30px; color: #EBE8CD; }
