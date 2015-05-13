@@ -1,4 +1,7 @@
-/* test version */
+/* test version!!!! */
+
+$primary-color : #FC3;
+
 
 @import url("uniform.utopia.css");
 
@@ -8,7 +11,7 @@
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
+}  
 
 @font-face {
   font-family: 'Open Sans';
@@ -36,14 +39,14 @@
 }
 
 body {
-    color:#000;
+    color: $primary-color;
     font-family:'Open Sans';
     background-color:#FFF;
     font-weight: 400;
 }
 
 #header-logo {
-width:1px;
+  width:1px;
 }
 
 .navigation {
