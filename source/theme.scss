@@ -1,26 +1,73 @@
 /* test version!!!! */
 
-$primary : #2A4F6E;
-$primary-dark : #042037; 
-$primary-light: #718DA5;
+$primary : #4c8ec5;
+$primary-dark : #0c72c6; 
+$primary-light: #9cc4e5;
 
 $secondary : #AA8E39;
 $secondary-dark : #554000;
 $secondary-light : #FFEAAA;
 
+$grey-dark : #333;
+$grey : #777;
+$grey-light : #EEE;
+
+$success-color : #b4e59c;
+$fail-color : #ef6161;
+
 $primary-font : 'Open Sans';
+
+
 
 @import url("uniform.utopia.css");
 
 
-body {
- font-family: $primary-font; background-color: #fff; font-weight: 400; }
+body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
 #header-logo { width: 1px; }
-.navigation { border-bottom: 1px solid #000; font-weight: 400; text-align: left; padding: 0; }
-.navigation div { margin: 0 !important; }
-.navigation div a { text-decoration: none; color: #000; border-bottom: 1px solid #ccc; display: block; padding: 7px 10px; }
-.navidation div:last-child a { border-bottom-color: #000; }
-.navigation a:hover { background-color: #ccc; color: #000; }
+
+/* 
+ * SIDE NAVIGATION
+ */
+
+.navigation { border-bottom: 1px solid $grey-dark; text-align: left; padding: 0; }
+.navigation div { margin-bottom: 0 !important; }
+.navigation div a { text-decoration: none; color: $primary-dark; border-bottom: 1px solid $grey-light; display: block; padding: 7px 10px; }
+.navigation a:hover { background-color: $primary-light; color: #fff; }
+
+#game-navigation .current-date { border: 1px solid; padding: 11px 0; font-weight: 700 !important; }
+#header-navigation { position: relative; left: 0; top: 2px; }
+#header-navigation div { float: left; cursor: pointer; margin: 0 6px 0 0; }
+#game-navigation .navigation { margin-bottom: 5px; }
+
+/*a.info-link, lobby-panel th, .lobby-panel table th, .lobby-panel table td, #game-navigation div, form .errorlist, div.uploader span.filename, div.uploader span.action, .provinces-legend .invitations, .game-content table.applicant-view input[type="submit"], .game-content table.mail-view input[type="submit"], .game-content table.mail-view .button-link, #col_0, #col_1, #col_2, #col_3, #col_4, #col_5, #col_6 { font-size: .9em; }*/
+
+/*
+ * resource-bar
+ */
+
+#resource-bar { border: 1px solid $grey; }
+#resource-bar thead th { font-weight: 700 !important; width: 98px; border-right: 1px solid $grey-light; border-bottom: 1px solid #aaa; background: transparent; }
+#resource-bar tbody th, #resource-bar tbody td { width: 98px; border-right: 1px solid $grey-light; border-bottom: 1px solid $grey-light; background: transparent; font-size: 1em; font-weight: lighter; text-align: right; color: #000; padding: 3px 6px; text-align: center; }
+#resource-bar .positive { color: $success-color; }
+#resource-bar .negative { color: $fail-color; }
+#resource-bar tbody th, .game-content form { font-size: .9em; font-weight: bolder; }
+
+/*
+ * game-header
+ */
+
+.game-header { height: auto; border-top: 1px solid $grey-dark;}
+
+.game-header h1 { height: auto; font-size: .9em; color: #000; margin: 5px 10px; padding: 5px; border-bottom: 3px solid $secondary; background-color: #fff; color: $secondary-dark;}
+.game-header a {display: block;}
+.game-header a:hover h1 { border-color: $secondary; }
+.game-header a h1 { border-bottom-color: $grey; color:#000;}
+
+
+/* 
+ * TBD
+ */
+
 #account-container { font-size: 10px; }
 #account-header .account-image { visibility: hidden; }
 a { text-decoration: none; }
@@ -40,12 +87,8 @@ h1, h2, h3 { font-weight: 100; }
 .bad.message { color: #f8f8f8; background: #521802; border-color: #feffea; }
 .info.message { color: #f8f8f8; background: #D09734; border-color: #feffea; }
 .lobby-panel .statement h2 { line-height: 14px; }
-#game-navigation .current-date { border: 1px solid; padding: 11px 0; font-weight: 700 !important; }
-#resource-bar { border: 1px solid; border-color: #555; }
-#resource-bar thead th { font-weight: 700 !important; width: 98px; border-right: 1px solid #ccc; border-bottom: 1px solid #aaa; background: transparent; }
-#resource-bar tbody th, #resource-bar tbody td { width: 98px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; background: transparent; font-size: 1em; font-weight: lighter; text-align: right; color: #000; padding: 3px 6px; text-align: center; }
-#resource-bar .positive { color: #8FA94A; }
-#resource-bar .negative { color: #d0aeae; }
+
+
 .game-content form, .game-content h2 { border: 1px solid #000; margin-top: 18px; line-height: 1.4em; font-size: 1.5em; border-color: #181818; padding: 10px 0; }
 .game-content h3 { font-size: 24px; color: #000; margin-left: 15px; margin-top: 5px; margin-bottom: 5px; text-align: left; }
 .game-content form.no-visible-fields { width: auto; background: none; border: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
@@ -100,10 +143,7 @@ td.news-obituaries:before { content: "O"; }
 #id_taunt_top_image { color: #f8f8f8; }
 .province-flag .flagpole { background: url(./images/province_profile/flagpole.png) no-repeat; }
 .province-flag .flag-image .default-flag { background: url(./images/province_profile/default_flag.png) no-repeat; }
-.game-header { height: auto; border-top: 1px solid #6b6348; border-bottom: 1px solid #6b6348; }
-.game-header h1 { height: auto; font-size: .9em; color: #000; margin: 5px 10px; padding: 5px; border-bottom: 3px solid #a0ce4e; background-color: #fff; }
-.game-header a:hover h1 { border-color: #a0ce4e; }
-.game-header a h1 { border-bottom-color: #000; }
+
 .game-content div { border: 1px solid; border-radius: 1px; border-color: #555; padding: 20px; }
 .game-content thead th { font-weight: 400; font-size: 1em; }
 .game-content tbody th { font-size: 1em; }
@@ -140,8 +180,7 @@ td#inline-hostility-meter { text-align: left; text-shadow: none; font-weight: 40
 #rescell1, #rescell2, #rescell3, #cellNotice { text-align: left!important; background: #F8F8F8 !important; color: #45ACF6!important; }
 #href_tag, #but_tag { background: #CCC!important; color: #000; border-color: #CCC!important; padding: 0; }
 .game-content th, .game-content td { padding: 1px 1px 1px 8px; }
-#header-navigation { position: relative; left: 0; top: 2px; }
-#header-navigation div { float: left; cursor: pointer; margin: 0 6px 0 0; }
+
 #throne-monarch-message, #throne-game-message p, h2 { margin: 0; padding: 0; }
 .game-content table.two-column-stats th { width: 2%; text-align: right; font-weight: 700 !important; padding-right: 10px; }
 .game-content table.two-column-stats td { width: 10%; text-align: left; border-left: 1px solid #CCC; }
@@ -153,13 +192,12 @@ td#inline-hostility-meter { text-align: left; text-shadow: none; font-weight: 40
 .bad { color: #CC8080; }
 .subtotal good { color: #green; }
 .reportable img { visibility: hidden; height: 1px; width: 1px; }
-#game-navigation .navigation { margin-bottom: 5px; }
-a.info-link, lobby-panel th, .lobby-panel table th, .lobby-panel table td, #game-navigation div, form .errorlist, div.uploader span.filename, div.uploader span.action, .provinces-legend .invitations, .game-content table.applicant-view input[type="submit"], .game-content table.mail-view input[type="submit"], .game-content table.mail-view .button-link, #col_0, #col_1, #col_2, #col_3, #col_4, #col_5, #col_6 { font-size: .9em; }
+
 .lobby-panel h1 a:hover, .dip-status { color: #000; }
 .divider:before, .divider-small:before { content: "---"; }
 .lobby-panel .statement, .motto { background: url(./images/province_profile/scroll.png) no-repeat; }
 .warning, .error { color: #e55700; }
-#resource-bar tbody th, .game-content form { font-size: .9em; font-weight: bolder; }
+
 .game-content form tbody th:first-child, .game-content tbody th:first-child { border-left: none; }
 .provinces-legend, .game-content table.schedule { font-size: .8em; }
 .game-content div.preference-box, table.mail-view td.formatted-text { background: #56534a; }
