@@ -10,15 +10,16 @@ var sass = require('gulp-sass');
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('source/*.scss')
-        .pipe(sass())
+    gulp.src('./psource/theme/style.scss')
+        .pipe(sass({ includePaths: ['./'], errLogToConsole: true }))
         .pipe(gulp.dest('./'));
 });
 
 // Watch Files For Changes
-//gulp.task('watch', function() {
-//    gulp.watch('source/*.scss', ['sass']);
-//});
+gulp.task('watch', function() {
+    gulp.watch('source/*.scss', ['sass']);
+});
+
 
 // Default Task
 gulp.task('default', ['sass', 'scripts', 'watch']);
