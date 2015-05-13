@@ -1,7 +1,7 @@
 /* test version!!!! */
 @import url("uniform.utopia.css");
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   background-color: #fff;
   font-weight: 400;
 }
@@ -784,6 +784,11 @@ a.info-link, lobby-panel th, .lobby-panel table th, .lobby-panel table td, #game
   content: " |";
 }
 
+/* 
+ *
+ * FONTS
+ *
+ */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
