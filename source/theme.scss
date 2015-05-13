@@ -4,9 +4,9 @@ $primary : #4c8ec5;
 $primary-dark : #0c72c6; 
 $primary-light: #9cc4e5;
 
-$secondary : #AA8E39;
-$secondary-dark : #554000;
-$secondary-light : #FFEAAA;
+$secondary : #63c54c;
+$secondary-dark : #63c54c;
+$secondary-light : #63c54c;
 
 $grey-dark : #333;
 $grey : #777;
@@ -16,6 +16,7 @@ $success-color : #b4e59c;
 $fail-color : #ef6161;
 
 $primary-font : 'Open Sans';
+$secondary-font : 'Droid Serif';
 
 
 
@@ -58,11 +59,17 @@ body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
 
 .game-header { height: auto; border-top: 1px solid $grey-dark;}
 
-.game-header h1 { height: auto; font-size: .9em; color: #000; margin: 5px 10px; padding: 5px; border-bottom: 3px solid $secondary; background-color: #fff; color: $secondary-dark;}
+.game-header h1 { height: auto; font-size: .9em; color: #000; margin: 5px 10px; padding: 5px; border-bottom: 3px solid $secondary; background-color: #fff; color:$grey-dark;}
 .game-header a {display: block;}
 .game-header a:hover h1 { border-color: $secondary; }
 .game-header a h1 { border-bottom-color: $grey; color:#000;}
 
+
+ /* 
+  * Headings: Game update, Royal Commands, The Province of, News;
+  */
+
+  /*.game-content form, */.game-content h2 { margin: 18px 0 ; line-height: 1em; font-size: 2em; padding: 10px 0; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark;}
 
 /* 
  * TBD
@@ -89,7 +96,7 @@ h1, h2, h3 { font-weight: 100; }
 .lobby-panel .statement h2 { line-height: 14px; }
 
 
-.game-content form, .game-content h2 { border: 1px solid #000; margin-top: 18px; line-height: 1.4em; font-size: 1.5em; border-color: #181818; padding: 10px 0; }
+
 .game-content h3 { font-size: 24px; color: #000; margin-left: 15px; margin-top: 5px; margin-bottom: 5px; text-align: left; }
 .game-content form.no-visible-fields { width: auto; background: none; border: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 form ul.errorlist { color: #e26f80; }
@@ -237,7 +244,7 @@ td#inline-hostility-meter { text-align: left; text-shadow: none; font-weight: 40
 @font-face {
   font-family: 'Droid Serif';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaIgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }

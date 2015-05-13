@@ -114,9 +114,9 @@ body {
   color: #000;
   margin: 5px 10px;
   padding: 5px;
-  border-bottom: 3px solid #AA8E39;
+  border-bottom: 3px solid #63c54c;
   background-color: #fff;
-  color: #554000;
+  color: #333;
 }
 
 .game-header a {
@@ -124,12 +124,26 @@ body {
 }
 
 .game-header a:hover h1 {
-  border-color: #AA8E39;
+  border-color: #63c54c;
 }
 
 .game-header a h1 {
   border-bottom-color: #777;
   color: #000;
+}
+
+/* 
+ * Headings: Game update, Royal Commands, The Province of, News;
+ */
+/*.game-content form, */
+.game-content h2 {
+  margin: 18px 0;
+  line-height: 1em;
+  font-size: 2em;
+  padding: 10px 0;
+  font-family: "Droid Serif";
+  font-weight: 300 !important;
+  color: #333;
 }
 
 /* 
@@ -226,15 +240,6 @@ h1, h2, h3 {
 
 .lobby-panel .statement h2 {
   line-height: 14px;
-}
-
-.game-content form, .game-content h2 {
-  border: 1px solid #000;
-  margin-top: 18px;
-  line-height: 1.4em;
-  font-size: 1.5em;
-  border-color: #181818;
-  padding: 10px 0;
 }
 
 .game-content h3 {
@@ -815,7 +820,7 @@ td#inline-hostility-meter {
 @font-face {
   font-family: 'Droid Serif';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   src: local("Droid Serif"), local("DroidSerif"), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaIgp9Q8gbYrhqGlRav_IXfk.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
