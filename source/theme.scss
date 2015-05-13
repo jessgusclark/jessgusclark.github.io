@@ -27,7 +27,8 @@ body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
 #header-logo { width: 1px; }
 
 
-div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action {background-image:none !important;}
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action, div.button, div.button span {background-image:none !important;}
+
 /* 
  * SIDE NAVIGATION
  */
