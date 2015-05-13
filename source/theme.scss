@@ -10,7 +10,7 @@ $secondary-light : #63c54c;
 
 $grey-dark : #333;
 $grey : #777;
-$grey-light : #EEE;
+$grey-light : #D5D5D5;
 
 $success-color : #b4e59c;
 $fail-color : #ef6161;
@@ -35,7 +35,7 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
  * SIDE NAVIGATION
  */
 
-.navigation { border-bottom: 1px solid $grey-dark; text-align: left; padding: 0; }
+.navigation { border-bottom: 1px solid $grey; text-align: left; padding: 0; }
 .navigation div { margin-bottom: 0 !important; }
 .navigation div a { text-decoration: none; color: $primary-dark; border-bottom: 1px solid $grey-light; display: block; padding: 7px 10px; }
 .navigation a:hover { background-color: $primary-light; color: #fff; }
@@ -67,7 +67,7 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
 .game-header h1 { height: auto; font-size: .9em; color: #000; margin: 5px 10px; padding: 5px; border-bottom: 3px solid $secondary; background-color: #fff; color:$grey-dark;}
 .game-header a {display: block;}
 .game-header a:hover h1 { border-color: $secondary; }
-.game-header a h1 { border-bottom-color: $grey; color:#000;}
+.game-header a h1 { border-bottom-color: $grey-light; color:#000; font-weight: 700 !important}
 
 
  /* 
@@ -75,10 +75,13 @@ div.selector, div.selector span, div.checker span, div.radio span, div.uploader,
   */
 
   /*.game-content form, */
-  .game-content h2 { margin: 18px 0 ; line-height: 1em; font-size: 2em; padding: 10px 0; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark; }
-  .game-content h2:not(:first-child) {border-top:1px solid $grey-light;}
+  .game-content h2 { margin: 0 !important; padding: 18px 0; line-height: 1.1em; font-size: 2em; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark; }
 
-  #throne-monarch-message p {border-left:5px solid $primary-light; margin-left:10px; padding-left:10px;}
+  .game-content h2 {border-top:1px solid $grey-light;}
+
+  .game-content #throne-game-message p, .game-content #throne-monarch-message p {border-left:5px solid $grey-light; margin:10px 25px !important; padding-left:10px; font-style:italic;}
+
+
 
 /* 
  * TBD
