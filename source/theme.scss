@@ -26,6 +26,8 @@ $secondary-font : 'Droid Serif';
 body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
 #header-logo { width: 1px; }
 
+
+div.selector, div.selector span, div.checker span, div.radio span, div.uploader, div.uploader span.action {background-image:none !important;}
 /* 
  * SIDE NAVIGATION
  */
@@ -72,7 +74,7 @@ body { font-family: $primary-font; background-color: #fff; font-weight: 400; }
   /*.game-content form, */.game-content h2 { margin: 18px 0 ; line-height: 1em; font-size: 2em; padding: 10px 0; font-family: $secondary-font; font-weight: 300 !important; color:$grey-dark;}
 
 
-  #throne-game-message p {border-left:5px solid $primary;}
+  #throne-monarch-message p {border-left:5px solid $primary-light; margin-left:10px; padding-left:10px;}
 
 /* 
  * TBD
@@ -154,7 +156,6 @@ td.news-obituaries:before { content: "O"; }
 .province-flag .flagpole { background: url(./images/province_profile/flagpole.png) no-repeat; }
 .province-flag .flag-image .default-flag { background: url(./images/province_profile/default_flag.png) no-repeat; }
 
-.game-content div { /*border: 1px solid; border-radius: 1px; border-color: #555; */padding: 20px; }
 .game-content thead th { font-weight: 400; font-size: 1em; }
 .game-content tbody th { font-size: 1em; }
 .game-content tbody td { padding: 5px 10px; }
