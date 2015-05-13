@@ -146,6 +146,10 @@ body {
   color: #333;
 }
 
+#throne-game-message p {
+  border-left: 5px solid #4c8ec5;
+}
+
 /* 
  * TBD
  */
@@ -503,9 +507,7 @@ td.news-obituaries:before {
 }
 
 .game-content div {
-  border: 1px solid;
-  border-radius: 1px;
-  border-color: #555;
+  /*border: 1px solid; border-radius: 1px; border-color: #555; */
   padding: 20px;
 }
 
@@ -671,11 +673,6 @@ td#inline-hostility-meter {
 
 .game-content th, .game-content td {
   padding: 1px 1px 1px 8px;
-}
-
-#throne-monarch-message, #throne-game-message p, h2 {
-  margin: 0;
-  padding: 0;
 }
 
 .game-content table.two-column-stats th {
