@@ -11,6 +11,7 @@ $secondary-light : #63c54c;
 $grey-dark : #333;
 $grey : #777;
 $grey-light : #D5D5D5;
+$grey-lightest : #f1f1f1;
 
 $success-color : #b4e59c;
 $fail-color : #EF4343;
@@ -114,8 +115,10 @@ form input[type=submit], .button-link { border: 1px solid $primary; color:#000; 
 .game-content form.change-kingdom .change-kingdom-form { font-size: 30px; color: #a9a9a9; }
 .game-content form.change-kingdom.change-kingdom-target { border: 0; border-top: 1px solid; border-color: #555; }
 
+.tablesorter tr:nth-of-type(odd) td { background-color: $grey-lightest; }
+td.province-name {text-align: left;}
 
-
+.monarch, .at-war, .intel-rotten {color:$fail-color !important}
 
 /* 
  * Messages and Alerts
@@ -267,6 +270,13 @@ td#inline-hostility-meter { text-align: left; text-shadow: none; font-weight: 40
 #href_c2cb:focus, #href_fa:focus, #href_c2cb:hover, #href_fa:hover { color: #AAA; }
 #href_c2cb:before, #href_fa:before { content: "| "; }
 #href_c2cb:after, #href_fa:after { content: " |"; }
+
+/* 
+ *
+ * MOBILE
+ *
+ */
+
 
 
 

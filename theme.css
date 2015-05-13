@@ -254,6 +254,18 @@ form input[type=submit], .button-link {
   border-color: #555;
 }
 
+.tablesorter tr:nth-of-type(odd) td {
+  background-color: #f1f1f1;
+}
+
+td.province-name {
+  text-align: left;
+}
+
+.monarch, .at-war, .intel-rotten {
+  color: #EF4343 !important;
+}
+
 /* 
  * Messages and Alerts
  */
@@ -836,6 +848,11 @@ td#inline-hostility-meter {
   content: " |";
 }
 
+/* 
+ *
+ * MOBILE
+ *
+ */
 /* 
  *
  * FONTS
