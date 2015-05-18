@@ -161,6 +161,8 @@ td.province-name {text-align: left;}
 #left-column>div:first-child {display: none;}
 #right-column {display: none;}
 
+.game-content div.preference-box, table.mail-view td.formatted-text {background-color: #fff; border-left:5px solid $grey-light; margin:10px 25px 25px 25px !important; padding-left:10px;  }
+
 /* 
  * TBD
  */
