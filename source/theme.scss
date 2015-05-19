@@ -144,6 +144,7 @@ td.province-name {text-align: left;}
 
 .monarch, .at-war, .intel-rotten {color:$fail-color !important}
 
+
 /* 
  * Messages and Alerts
  */
@@ -239,7 +240,7 @@ td.news-obituaries:before { content: "O"; }
 .province-flag .flagpole { background: url(./images/province_profile/flagpole.png) no-repeat; }
 .province-flag .flag-image .default-flag { background: url(./images/province_profile/default_flag.png) no-repeat; }
 
-.game-content thead th { font-weight: 400; font-size: 1em; }
+.game-content thead th { font-weight: 700 !important; font-size: 1em; }
 .game-content tbody th { font-size: 1em; }
 .game-content tbody td { padding: 5px 10px; }
 .game-content tbody tr { border-bottom: 1px solid #ccc; border-top: 1px 1px solid #ccc; ; }

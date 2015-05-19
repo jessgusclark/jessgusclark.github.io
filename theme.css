@@ -638,7 +638,7 @@ td.news-obituaries:before {
 }
 
 .game-content thead th {
-  font-weight: 400;
+  font-weight: 700 !important;
   font-size: 1em;
 }
 
