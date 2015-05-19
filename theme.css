@@ -454,6 +454,10 @@ form ul.errorlist {
   color: #e26f80;
 }
 
+.game-content table thead th {
+  text-align: center;
+}
+
 .game-content form table {
   border: 0;
   border-top: 1px solid;
@@ -474,6 +478,7 @@ form ul.errorlist {
 .game-content form tbody th {
   border-left: 1px solid #ccc;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .game-content form tbody td {

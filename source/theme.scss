@@ -196,10 +196,11 @@ a:focus, a:hover { color: #AAA; }
 form ul.errorlist { color: #e26f80; }
 
 
+.game-content table thead th {text-align: center;}
 
 .game-content form table { border: 0; border-top: 1px solid; margin-bottom: 10px; text-align: left; border-color: #555; }
 .game-content form table thead th { height: 36px; font-weight: 400; font-size: 14px; text-align: center; text-decoration: none; vertical-align: bottom; }
-.game-content form tbody th { border-left: 1px solid #ccc; ; font-size: 14px; }
+.game-content form tbody th { border-left: 1px solid #ccc; ; font-size: 14px; font-weight: bold;}
 .game-content form tbody td { padding-right: 18px; font-size: .9em; text-align: center; }
 .game-content form tbody tr { border: none; }
 .game-content form.change-kingdom #royal-commands { border-top: 1px dotted #000; }
